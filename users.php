@@ -4,59 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users</title>
+    <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="javascript/background.js"></script>
-
-    <style>
-      .jump {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      /* left: 0; */
-      right: 0;
-      /* width: 100px;
-      height: 100px; */
-      margin: auto;
-      /* background: #f00; */
-      /* border-radius: 50%; */
-
-      transform-origin: bottom center;
-      animation-name: jumpjump;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-    }
-
-    @keyframes jumpjump {
-      0% {
-        transform: scaleX(1) scaleY(1);
-      }
-
-      20% {
-        transform: scaleX(1.5) scaleY(0.5);
-      }
-
-      23% {
-        transform: scaleX(1.5) scaleY(0.5);
-      }
-
-      60% {
-        transform: scaleX(0.7) scaleY(1.3) translateY(-100%);
-      }
-
-      63% {
-        transform: scaleX(0.7) scaleY(1.3) translateY(-100%);
-      }
-
-      100% {
-        transform: scaleX(1) scaleY(1) translateY(0);
-      }
-    }
-    </style>
 
 
 </head>
@@ -132,10 +84,6 @@
             </div>
         </section>
     </div>
-
-    <canvas id="canvas" width="450" height="750" style="position: absolute; right: 0;" class="jump">
-       
-    </canvas>
 
     <!-- js -->
     <script src="javascript/users.js"></script>
