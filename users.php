@@ -17,7 +17,7 @@
         <section class="users">
             <header>
                 <div class="content">
-                    <img src="/creator-glassman.png" alt="">
+                    <img src="creator-glassman.png" alt="">
                     <div class="details">
                         <span>Coding Nepal</span>
                         <p>Active now</p>
