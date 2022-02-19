@@ -20,7 +20,6 @@ continueBtn.onclick = () => {
                 }else{
                     errorText.style.display = "block";
                     errorText.textContent = data;
-                    console.log('進去else');
                 }
             }
         }
