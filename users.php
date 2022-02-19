@@ -8,8 +8,7 @@ if (!isset($_SESSION['unique_id'])) {
 include_once "php/config.php";
 $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
 if (mysqli_num_rows($sql) > 0) {
-    $row = mysqli_fetch_assoc($sql);
-    print_r ($row);
+    $rows = mysqli_fetch_assoc($sql);
 }
 ?>
 
@@ -21,10 +20,10 @@ if (mysqli_num_rows($sql) > 0) {
             <header>
 
                 <div class="content">
-                    <img src="php/images/<?php echo $row['img'] ?>" alt="">
+                    <img src="php/images/<?php echo $rows['img'] ?>" alt="">
                     <div class="details">
-                        <span><?php echo $row['fname'] . " " . $row['lname'] ?></span>
-                        <p><?php echo $row['status'] ?></p>
+                        <span><?php echo $rows['fname'] . " " . $rows['lname'] ?></span>
+                        <p><?php echo $rows['status'] ?></p>
                     </div>
                 </div>
                 <a href="#" class="logout">Logout</a>
@@ -35,56 +34,7 @@ if (mysqli_num_rows($sql) > 0) {
                 <button><i class="fas fa-search"></i></button>
             </div>
             <div class="users-list">
-                <a href="#">
-                    <div class="content">
-                        <img src="/creator-glassman.png" alt="">
-                        <div class="details">
-                            <span>Coding Nepal</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="/creator-glassman.png" alt="">
-                        <div class="details">
-                            <span>Coding Nepal</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="/creator-glassman.png" alt="">
-                        <div class="details">
-                            <span>Coding Nepal</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="/creator-glassman.png" alt="">
-                        <div class="details">
-                            <span>Coding Nepal</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="/creator-glassman.png" alt="">
-                        <div class="details">
-                            <span>Coding Nepal</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
+                
             </div>
         </section>
     </div>

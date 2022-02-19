@@ -4,4 +4,4 @@
     if(!$conn){
         echo "Database connected" . mysqli_connect_error();
     }
-?>0
+?>
